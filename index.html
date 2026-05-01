@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Baking School</title>
+<script>
+   $(function(){
+       $('#list').sortable();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Gravitas+One&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 928px;
+        height: 1536px;
+        background: whitesmoke;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px gray;
+        margin: 0 auto;
+    } h2 {
+    font-family: "Comfortaa",serif;
+    font-size: 16pt;
+    font-style: italic;
+    line-height: 1.4em;
+    text-align: center;
+}
+    } main {
+        width: 78%;
+        margin: 36px auto;
+    } header img {
+        width: 100%;
+        // margin-bottom: 10px;
+    } header h1 {
+        font-family: "GravitasOne", sans-serif;
+        text-align: center;
+        margin-top: 24px;
+        text-shadow: 2px 3px 6px chocolate;
+    } main p {
+        font: 14pt/1.4em "Comfortaa", sans-serif;
+        width: 65ch;
+        margin: 24px auto;
+    } main {
+        width: 80%;
+        height: auto;
+        // min-height: 320px;
+    } main figure {
+        width: 200px;
+        height: auto;
+        margin: 18px;
+    } main img {
+        width: 200px;
+        height: auto;
+        float: right;
+    } figcaption {
+        font: 12pt/1.4em "Comfortaa", sans-serif;
+        text-align: center;
+    } ul {
+        width: 100%;
+        height: 35px;
+        margin-top: -3px
+    } #container {
+        width: 320px;
+        height: 256px;
+        background: white;
+        border-radius: 12px;
+        margin: 24px auto;
+        font: 14pt/1.4em "Comfortaa", sans-serif;
+        display: grid;
+        grid-template: repeat(4, 64px) / auto auto;
+    } #list {
+        width: 256px;
+        height: 256px;
+        background: white;
+        border-radius: 12px;
+    } .listitem {
+        width: 254px;
+        height: 62px;
+        background: skyblue;
+        border-radius: 12px;
+        margin: 2px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } #numbers {
+        width: 64px;
+        height: 256px;
+        float: left;
+    } .number {
+        width: 62px;
+        height: 62px;
+        background: sienna;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin: 2px 0;
+    } button {
+        width: 150px;
+        height: 38px;
+        border-radius: 12px;
+        background: lightblue;
+        margin: -72px auto;
+        display: block;
+        font: bold 12pt/1.4em "Comfortaa", sans-serif";
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <img src="bread.jpg" alt="bread" width="720" height="486"/>
+            <h1>Tell Us Why You Want to Join Baking School</h1>
+            <h2>Please rank your reasons for joining baking school from most to least important:<br/>(Drag the blue boxes in order of preference.)</h2>
+        </header>
+        <main>
+    <div id="container">
+    <div id="numbers">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">4</div>
+    </div>
+    <div id="list">
+        <div class="listitem">Career in baking industry</div>
+        <div class="listitem">Learn top baking skills</div>
+        <div class="listitem">Explore creativity in baking</div>
+        <div class="listitem">Improve home baking skills</div>
+        </div>
+
+    </div>
+</main>
+
+</div>
+
+</body>
+</html>
